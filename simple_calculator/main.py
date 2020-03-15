@@ -15,4 +15,7 @@ class SimpleCalculator:
         return reduce(operator.mul, args)
 
     def div(self, a, b):
-        return a / b
+        try:
+            return a / b
+        except ZeroDivisionError:
+            return float('inf')
