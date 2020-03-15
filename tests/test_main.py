@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+import pytest
+
 from simple_calculator.main import SimpleCalculator
 
 
@@ -70,3 +72,10 @@ def test_div_by_zero_returns_inf():
     result = calculator.div(5, 0)
 
     assert result == float('inf')
+
+
+def test_mul_by_zero_raises_exception():
+    calculator = SimpleCalculator()
+
+    with pytest.raises(ValueError):
+        calculator.mul(3, 0)
