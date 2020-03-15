@@ -36,3 +36,11 @@ def test_subtract_two_numbers():
     result = calculator.sub(10, 3)
 
     assert result == 7
+
+
+def test_mul_two_numbers():
+    calculator = SimpleCalculator()
+
+    result = calculator.mul(6, 4)
+
+    assert result == 24
