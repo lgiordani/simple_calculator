@@ -22,5 +22,10 @@ class SimpleCalculator:
         except ZeroDivisionError:
             return float("inf")
 
-    def avg(self, it):
-        return sum(it) / len(it)
+    def avg(self, it, ut=None):
+        if not ut:
+            ut = max(it)
+
+        _it = [x for x in it if x <= ut]
+
+        return sum(_it) / len(_it)
