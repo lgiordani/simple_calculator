@@ -135,3 +135,11 @@ def test_avg_manages_empty_list_after_outlier_removal():
     result = calculator.avg([12, 98], lt=15, ut=90)
 
     assert result == 0
+
+
+def test_avg_manages_empty_list_before_outlier_removal():
+    calculator = SimpleCalculator()
+
+    result = calculator.avg([], lt=15, ut=90)
+
+    assert result == 0
