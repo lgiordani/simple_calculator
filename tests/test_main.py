@@ -119,3 +119,11 @@ def test_avg_lower_threshold_is_included():
     result = calculator.avg([2, 5, 12, 98], lt=2)
 
     assert result == 29.25
+
+
+def test_avg_empty_list():
+    calculator = SimpleCalculator()
+
+    result = calculator.avg([])
+
+    assert result == 0
