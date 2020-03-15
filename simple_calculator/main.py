@@ -21,3 +21,6 @@ class SimpleCalculator:
             return a / b
         except ZeroDivisionError:
             return float("inf")
+
+    def avg(self, it):
+        return sum(it) / len(it)
