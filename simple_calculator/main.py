@@ -13,3 +13,6 @@ class SimpleCalculator:
 
     def mul(self, *args):
         return reduce(operator.mul, args)
+
+    def div(self, a, b):
+        return a / b
