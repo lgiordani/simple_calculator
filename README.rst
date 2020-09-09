@@ -3,38 +3,20 @@ SimpleCalculator
 ===============================
 
 
-.. image:: https://img.shields.io/pypi/v/simple_calculator.svg
-        :target: https://pypi.python.org/pypi/simple_calculator
+A basic calculator written in Python used to teach TDD. This is a companion repository for a series of posts on `The Digital Cat`_
 
-.. image:: https://img.shields.io/travis/lgiordani/simple_calculator.svg
-        :target: https://travis-ci.org/lgiordani/simple_calculator
-
-.. image:: https://readthedocs.org/projects/simple-calculator/badge/?version=latest
-        :target: https://simple-calculator.readthedocs.io/en/latest/?badge=latest
-        :alt: Documentation Status
-
-.. image:: https://pyup.io/repos/github/lgiordani/simple_calculator/shield.svg
-     :target: https://pyup.io/repos/github/lgiordani/simple_calculator/
-     :alt: Updates
+Instructions
+------------
 
 
-A basic calculator written in Python used to teach TDD
 
-
-* Free software: MIT license
-* Documentation: https://simple-calculator.readthedocs.io.
-
-
-Features
---------
-
-* TODO
 
 Credits
 ---------
 
-This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+This package was created with Cookiecutter_ and the `lgiordani/cookiecutter-pypackage`_ project template.
 
+.. _`The Digital Cat`: https://www.thedigitalcatonline.com
 .. _Cookiecutter: https://github.com/audreyr/cookiecutter
-.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+.. _`lgiordani/cookiecutter-pypackage`: https://github.com/lgiordani/cookiecutter-pypackage
 
