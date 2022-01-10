@@ -71,7 +71,7 @@ def test_div_by_zero_returns_inf():
 
     result = calculator.div(5, 0)
 
-    assert result == float('inf')
+    assert result == float("inf")
 
 
 def test_mul_by_zero_raises_exception():
@@ -103,3 +103,11 @@ def test_avg_removes_lower_outliers():
     result = calculator.avg([2, 5, 12, 98], lt=10)
 
     assert result == pytest.approx(55)
+
+
+def test_avg_upper_threshold_is_included():
+    calculator = SimpleCalculator()
+
+    result = calculator.avg([2, 5, 12, 98], ut=98)
+
+    assert result == 29.25
