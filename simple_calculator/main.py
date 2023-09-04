@@ -23,15 +23,18 @@ class SimpleCalculator:
             return float("inf")
 
     def avg(self, it, lt=None, ut=None):
-        _it = it[:]
+        count = 0
+        total = 0
 
-        if lt is not None:
-            _it = [x for x in _it if x >= lt]
+        for number in it:
+            if lt is not None and number < lt:
+                continue
+            if ut is not None and number > ut:
+                continue
+            count += 1
+            total += number
 
-        if ut is not None:
-            _it = [x for x in _it if x <= ut]
-
-        if not len(_it):
+        if count == 0:
             return 0
 
-        return sum(_it) / len(_it)
+        return total / count
