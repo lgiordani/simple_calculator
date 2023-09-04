@@ -18,3 +18,13 @@ def test_add_three_numbers():
     result = calculator.add(4, 5, 6)
 
     assert result == 15
+
+
+def test_add_many_numbers():
+    numbers = range(100)
+
+    calculator = SimpleCalculator()
+
+    result = calculator.add(*numbers)
+
+    assert result == 4950
